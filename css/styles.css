@@ -56,6 +56,8 @@ body {
 /* any list */
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* site nav */
@@ -84,8 +86,13 @@ ul {
 .link.current {
     color: var(--accent-color);
 }
+.order{
+    text-align: center;
+}
 
-.order {
+.order-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -95,18 +102,19 @@ ul {
     background-color: var(--footer-color);
     color: var(--primary-white-color);
     width: 696px;
+    background-color:teal;
 
 }
 
 /* order and filters buttons */
-.order. order-button  {
+.filter {
     display: inline-block;
-    padding: 10px 32px;
-    width: 200px;
-    height: 50px;
+    padding: 6px 22px;
+    height: 38px;
     font-family: inherit;
     color: var(--title-text-color);
     background-color: var(--button-color);
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -114,21 +122,26 @@ ul {
     border-radius: 4px;
     cursor: pointer;
 }
-
+/* Заказать услугу */
 .button {
     display: inline-block;
     padding: 10px 32px;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     font-family: inherit;
     color: var(--title-text-color);
     background-color: var(--button-color);
+    text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    
+    
+    letter-spacing: 0.06em;
 }
 
 .button.primary {
