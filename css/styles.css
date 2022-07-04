@@ -16,6 +16,7 @@
 }
 
 body {
+    width: 1600px;
     font-family: Roboto, sans-serif;
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -102,7 +103,7 @@ ul {
 
 .features {
     margin-top: 0;
-    background: #2196F3;
+    /* background: #2196F3; */
 }
 
 .our-features {
@@ -219,7 +220,7 @@ ul {
 } */
 
 .section{
-   
+   margin-top: 94px;
 }
 .our-works .work:not(:last-child){
     margin-right: 30px;
@@ -233,6 +234,7 @@ ul {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    margin: 0;
 }
 
 /* our team */
@@ -258,7 +260,29 @@ ul {
     line-height: 1.19;
 }
 
-/* our works */
+/* filters */
+
+.filters{
+    display: none;
+}
+.filters-nav {
+    display: flex;
+    margin-left: 295px;
+    
+}
+.filter{
+    margin-right: 8px;
+}
+
+.samples-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.samples{
+    margin-right: 20px;
+}
+
 .sample {
     color: var(--title-text-color);
     font-weight: 700;
@@ -303,6 +327,7 @@ ul {
 
 /* footer */
 .footer {
+    margin-top: 94px;
     background-color: var(--footer-color);
 }
 
@@ -349,7 +374,8 @@ ul {
     color: var(--accent-color);
 } */
 .container{
-    
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
