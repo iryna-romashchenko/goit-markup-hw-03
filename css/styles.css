@@ -16,10 +16,14 @@
 }
 
 body {
-    width: 1600px;
+    width: 1200px;
     font-family: Roboto, sans-serif;
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
+}
+
+.page-header{
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -132,10 +136,6 @@ ul {
 /* Эффективные решения для вашего бизнеса */
 .order{
         display: block;
-        /* width: 1600px;
-        height: 600px;
-        padding-top: 200px;
-        padding-left: 452px;  */
         background-color: var(--footer-color);
         text-align: center;
 }
@@ -211,24 +211,35 @@ ul {
 
 /* direction and team */
 
-.our-works{
-    display: flex;
-}
-
 /* .work{
     margin-right: 30px;
 } */
 
-.section{
+.works{
    margin-top: 94px;
 }
-.our-works .work:not(:last-child){
+
+.works-list {
+    display: flex;
+}
+.works-list .work:not(:last-child){
     margin-right: 30px;
 }
-/* .our-works > work:last-child {
-    margin-right: 0;} */
 
-.section-title {
+.work-title {
+    text-align: center;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin: 0;
+}
+
+.our-works .work:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-title {
     text-align: center;
     color: var(--title-text-color);
     font-weight: 700;
@@ -239,8 +250,12 @@ ul {
 
 /* our team */
 
-.team{
+.team-list{
     display: flex;
+    margin-top: 94px;
+}
+
+.team-members {
     margin-top: 94px;
 }
 
@@ -262,7 +277,7 @@ ul {
 
 /* filters */
 
-.filters{
+.filter-title{
     display: none;
 }
 .filters-nav {
@@ -273,14 +288,22 @@ ul {
 .filter{
     margin-right: 8px;
 }
+.filter-type {
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.9;
+}
 
 .samples-list{
     display: flex;
     flex-wrap: wrap;
 }
+.samples:nth-of-type(3n) {
+    margin-right: 0;
+}
 
 .samples{
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .sample {
@@ -290,12 +313,6 @@ ul {
     line-height: 2;
 }
 
-/* our works filter */
-.filter-type {
-    /* font-weight: 400; */
-    font-size: 16px;
-    line-height: 1.9;
-}
 
 /* our features */
 
