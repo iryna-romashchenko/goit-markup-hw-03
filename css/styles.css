@@ -29,7 +29,8 @@ header{
 .main-nav{
     display: flex;
     align-items: center;
-    height: 80px;
+    padding: 32px 0;
+    /* height: 80px; */
 }
 
 .logo {
@@ -59,7 +60,7 @@ header{
 .contacts .item +.item {
     margin-left: 50px;
 }
-.contact-link {
+.contact-link, link {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -198,16 +199,15 @@ ul {
     background-color: var(--accent-color);
 }
 
+.button.secondary {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+}
+
 .button:hover,
 .button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-}
-
-.button.secondary {
-    color: var(--accent-color);
-    background-color: var(--primary-white-color);
-
 }
 
 /* direction and team */
@@ -261,7 +261,7 @@ ul {
     text-align: center;
     margin-right: 30px;
     width: 270px;
-    height: 368px;
+    /* height: 368px; */
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -269,7 +269,7 @@ ul {
 
 .name {
     color: var(--title-text-color);
-    height: 19px;
+    /* height: 19px; */
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -289,7 +289,7 @@ ul {
 .filter {
     display: inline-block;
     padding: 6px 22px;
-    height: 38px;
+    /* height: 38px; */
     font-family: inherit;
     color: var(--title-text-color);
     background-color: var(--button-color);
@@ -302,10 +302,11 @@ ul {
     cursor: pointer;
     margin-right: 8px;
 }
-
-.filters-nav list .filter:not(:first-child) {
-    margin-right: 0;}
-
+.filter:hover,
+.filter:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
 .filter-title{
     display: none;
 }
@@ -350,7 +351,7 @@ ul {
     line-height: 2;
     margin-top: 20px;
     margin-bottom: 4px;
-    height: 36px;
+    /* height: 36px; */
 }
 
 
@@ -364,7 +365,7 @@ ul {
     margin: 0;
     display: none;
     width: 270px;
-    height: 75px;
+    /* height: 75px; */
 }
 .feature-title {
     color: var(--title-text-color);
@@ -380,7 +381,7 @@ ul {
    margin-top: 0;
     font-size: 14px;
     line-height: 1.7;
-    height: 60px;
+    /* height: 60px; */
 }
 
 /* footer */
@@ -418,9 +419,6 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    margin-bottom: 61px;
-
-    /* color: #2196F3; */
 }
 
 .footer-logo::after {
