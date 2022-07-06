@@ -355,7 +355,6 @@ ul {
     margin-right: 30px;
     margin-bottom: 30px;
     flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid var(--secondary-border-color);
 }
 
 .samples:nth-of-type(3n) {
@@ -372,9 +371,13 @@ ul {
     margin-bottom: 4px;
     margin-top: 0;
 }
-
+.samples img {
+    margin-bottom: 0;
+}
 .sample-description{
     padding: 20px 24px 20px 24px;
+    border: 1px solid var(--secondary-border-color);
+    margin-top: 0;
 }
 /* our features */
 
