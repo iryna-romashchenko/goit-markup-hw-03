@@ -186,6 +186,8 @@ ul {
 
     .works{
         padding-top: 94px;
+        padding-bottom: 94px;
+
     }
 
 .works-list .work:not(:last-child){
@@ -202,16 +204,7 @@ ul {
     margin-top: 0;       
 }
 
-.team-title {
-    text-align: center;
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    margin: 0;
-    padding-top: 94px;
-    margin-bottom: 50px;
-}
+
 
 /* our team */
 
@@ -219,10 +212,20 @@ ul {
     display: flex;
     margin-top: 0;
 }
+.team-title {
+    text-align: center;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin: 0;
+    /* padding-top: 94px; */
+    margin-bottom: 50px;
+}
 
 .team-members {
     background-color: var(--team-bg-color);
-    margin-top: 94px;
+    padding-top: 94px;
     padding-bottom: 94px;
    
 }
@@ -240,10 +243,15 @@ ul {
     margin-right: 30px;
 }
 
+.specialist{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .name {
     color: var(--title-text-color);
     /* height: 19px; */
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -252,7 +260,7 @@ ul {
 
 .position {
     margin-top: 0;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 16px;
     line-height: 1.19;
 }
@@ -351,8 +359,8 @@ ul {
 }
 
 .features{
-    margin: 0;
     padding-top: 94px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
 }
